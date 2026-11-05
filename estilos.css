@@ -1,0 +1,170 @@
+/* Variables de color y fuentes según planificación */
+:root {
+    --fondo: #FAF8F5;
+    --lila-suave: #E8E0F0;
+    --rosa-suave: #FADADD;
+    --texto: #333333;
+    --blanco: #FFFFFF;
+    --acento-rosa: #E8839B;
+    --fuente-titulo: 'Abril Fatface', cursive, serif;
+    --fuente-cuerpo: 'Lora', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* Encabezado y Navegación */
+header {
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid var(--lila-suave);
+    z-index: 100;
+}
+
+.logo-texto {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+    color: var(--acento-rosa);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--acento-rosa);
+}
+
+/* Secciones Generales */
+section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulo);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--acento-rosa);
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Sección Hero (Inicio) */
+.hero {
+    text-align: center;
+    background-color: var(--lila-suave);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--texto);
+}
+
+.frase {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+/* Sección Sobre mí */
+.sobre-mi-contenido {
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Grid de Tarjetas de Proyectos */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    border-left: 5px solid var(--rosa-suave);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta h3 {
+    font-size: 1.4rem;
+}
+
+.btn-evidencia {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--lila-suave);
+    color: var(--texto);
+    text-decoration: none;
+    border-radius: 0.4rem;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-evidencia:hover {
+    background-color: var(--rosa-suave);
+}
+
+/* Habilidades */
+.lista-habilidades {
+    list-style-type: square;
+    padding-left: 2rem;
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+/* Contacto */
+#contacto {
+    text-align: center;
+    background-color: var(--rosa-suave);
+    border-radius: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--blanco);
+    border-top: 1px solid var(--lila-suave);
+    margin-top: 2rem;
+}
